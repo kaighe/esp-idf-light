@@ -2,7 +2,7 @@
   "name": "esp-idf-light",
   "displayName": "ESP-IDF Light",
   "description": "Lightweight tools to ESP-IDF development.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "icon": "/image.png",
   "publisher": "kaighe",
   "repository": {
