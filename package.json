@@ -1,0 +1,68 @@
+{
+  "name": "esp-idf-light",
+  "displayName": "ESP-IDF Light",
+  "description": "Lightweight tools to ESP-IDF development.",
+  "version": "0.0.1",
+  "icon": "/image.png",
+  "publisher": "kaighe",
+  "engines": {
+    "vscode": "^1.120.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "ESP-IDF Light",
+      "properties": {
+        "esp-idf-light.basePaths": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": [
+            "C:\\esp"
+          ],
+          "description": "List of ESP-IDF installation base paths",
+          "scope": "window"
+        },
+        "esp-idf-light.additionalInstallations": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": [],
+          "description": "List of additional ESP-IDF installations",
+          "scope": "window"
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "esp-idf-light.new_terminal",
+        "title": "Create New Terminal",
+        "category": "ESP-IDF Light"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^22.19.19",
+    "@types/vscode": "^1.120.0",
+    "@vscode/test-cli": "^0.0.12",
+    "@vscode/test-electron": "^2.5.2",
+    "eslint": "^9.39.3",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.56.1"
+  }
+}
