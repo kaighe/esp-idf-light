@@ -5,6 +5,10 @@
   "version": "0.0.1",
   "icon": "/image.png",
   "publisher": "kaighe",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kaighe/esp-idf-light"
+  },
   "engines": {
     "vscode": "^1.120.0"
   },
