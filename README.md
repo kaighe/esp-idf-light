@@ -1,6 +1,6 @@
 # ESP-IDF Light
 
-A set of lightweight tools for ESP-IDF development.
+A set of lightweight vscode tools for ESP-IDF development.
 
 ## Features
 
